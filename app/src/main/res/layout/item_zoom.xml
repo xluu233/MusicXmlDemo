@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    tools:context=".XmlScoreActivity">
+
+    <ImageView
+        android:id="@+id/zoom_less"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_less"
+        android:onClick="setZoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/zoom_add"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_add"
+        android:onClick="setZoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/zoom_text"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1.0"
+        android:textColor="#FF925EA8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zoom_less"
+        app:layout_constraintStart_toEndOf="@+id/zoom_add"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
